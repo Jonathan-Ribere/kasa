@@ -1,9 +1,15 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
+import React from "react";
+import Header from "../../components/Header/index";
 
 export default function index() {
   return (
     <div>
-        <Navbar/>  </div>
-  )
+      <Header />
+      <main>
+        <div>
+            
+        </div>
+      </main>
+    </div>
+  );
 }
