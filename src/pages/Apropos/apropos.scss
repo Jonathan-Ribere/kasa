@@ -1,0 +1,14 @@
+.cover {
+    width: 335px;
+    height: 220px;
+    margin: auto;
+    overflow: hidden; /* Cacher le contenu débordant */
+  }
+  
+  .cover .cover-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ajuster l'image pour remplir complètement le conteneur */
+  }
+  
