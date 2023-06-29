@@ -14,7 +14,7 @@ export default function index() {
         </div>
         <section className="section-home">
           {data.map((item) => (
-            <CardHome key={item.id} title={item.title} />
+            <CardHome key={item.id} id={item.id} title={item.title} />
           ))}
         </section>
       </main>
