@@ -1,0 +1,24 @@
+$color-red: #FF6060;
+
+.cover-home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    background-color: $color-red;
+    background-image: linear-gradient(to bottom, #FF6060 0%, #000000 99%);
+
+    &-titre {
+margin-left: 20px;
+    &_text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+    }
+}
+}

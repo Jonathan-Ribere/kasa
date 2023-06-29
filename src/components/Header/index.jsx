@@ -9,7 +9,7 @@ export default function Header() {
     <div className="header">
       <div className="header-logo">
         <div className="header-logo_svg">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="" alt="logo" />
         </div>
       </div>
 
