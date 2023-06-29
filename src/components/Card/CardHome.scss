@@ -14,11 +14,12 @@ $color-red: #FF6060;
     background-image: linear-gradient(to bottom, #FF6060 0%, #000000 99%);
 
     &-titre {
-margin-left: 20px;
-    &_text {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25.67px;
+        margin-left: 20px;
+
+        &_text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25.67px;
+        }
     }
-}
 }
