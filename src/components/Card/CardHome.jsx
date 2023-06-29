@@ -1,17 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './CardHome.scss'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./CardHome.scss";
 
 export default function CardHome(props) {
-    const { id, title } = props;
+  const { id, title } = props;
 
-    return (
-      <div className='card'>
-         <Link to={`/fiche-logement/${id}`}>
-        <div className='card-titre'>
-          <p className='card-titre_text'>{title}</p>
+  return (
+    <Link to={`/fiche-logement/${id}`}>
+      <div className="card">
+        <div className="card-titre">
+          <p className="card-titre_text">{title}</p>
         </div>
-        </Link>
       </div>
-    );
-  }
+    </Link>
+  );
+}

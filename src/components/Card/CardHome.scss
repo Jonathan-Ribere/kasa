@@ -11,12 +11,15 @@ $color-red: #FF6060;
     height: 255px;
     border-radius: 10px;
     background-color: $color-red;
-    background-image: linear-gradient(to bottom, #FF6060 0%, #000000 99%);
     margin-bottom: 20px;
     &-titre {
         margin-left: 20px;
+        height: 100%;
+        position: relative;
 
         &_text {
+            position: absolute;
+            bottom: 40px;
             font-size: 18px;
             font-weight: 500;
             line-height: 25.67px;

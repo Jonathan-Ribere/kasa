@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './global.scss'
-import Home from './pages/Home/index'
+import Home from './pages/Home/home'
 import Apropos from './pages/Apropos/index'
 import FicheLogement from './pages/FicheLogement/ficheLogement'
 
