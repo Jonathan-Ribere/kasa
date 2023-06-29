@@ -14,6 +14,7 @@ export default function index() {
         <section className="section-home">
           <div className="section-home_img">
             <img src={cover} className="coverHome" alt="Image de site" />
+            <span className="image-text">Chez vous, <br />partout et ailleurs </span>
           </div>
           {data.map((item) => (
             <CardHome key={item.id} id={item.id} title={item.title} />
