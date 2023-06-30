@@ -1,0 +1,23 @@
+footer {
+    background-color: black;
+}
+
+.footer {
+    padding: 30px;
+
+    &-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-txt {
+        display: flex;
+        justify-content: center;
+
+        &_p {
+            margin-top: 20px;
+            color: white;
+        }
+    }
+
+}
