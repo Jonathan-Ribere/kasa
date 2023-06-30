@@ -1,15 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../../components/Header/header";
 import cover from "../../images/Apropos.png";
 import "./apropos.scss";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function Aporpos() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
       <Header />
@@ -18,23 +13,10 @@ export default function Aporpos() {
           <img src={cover} className="cover-img" alt="Image de site" />
         </div>
         <section>
-        <div className="dropdown">
-      <div className="dropdown-toggle" onClick={toggleDropdown}>
-        Dropdown
-      </div>
-      {isOpen && (
-        <ul className="dropdown-menu">
-          <li>ici le text</li>
-        
-        </ul>
-      )}
-    </div>
-  
-
-
-
-
-
+          <Dropdown titre ="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
+          <Dropdown titre ="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
+          <Dropdown titre ="Service" text="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."/>
+          <Dropdown titre ="Sécurité" text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."/>
         </section>
       </main>
     </>
