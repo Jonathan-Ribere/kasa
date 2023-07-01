@@ -68,3 +68,36 @@
     }
 
 }
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-container .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .carousel-container .left {
+    left: 10px; /* ajustez la valeur selon vos besoins */
+  }
+  
+  .carousel-container .right {
+    right: 10px; /* ajustez la valeur selon vos besoins */
+  }
+  
+  .carousel-container .arrow img {
+    /* styles personnalisés pour les images de flèche */
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  
+  .carousel-img{
+    width: 355px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+  }

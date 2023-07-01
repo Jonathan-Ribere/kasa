@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import Header from '../../components/Header/header';
-import './ficheLogement.scss';
-import data from '../../db';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import Header from "../../components/Header/header";
+import "./ficheLogement.scss";
+import data from "../../db";
 
-import flecheD from '../../images/icones/flecheDroite.png';
-import flecheG from '../../images/icones/flecheGauche.png';
+import flecheD from "../../images/icones/flecheDroite.png";
+import flecheG from "../../images/icones/flecheGauche.png";
 
-import etoileRed from '../../images/icones/etoileRed.png';
-import etoileGris from '../../images/icones/etoileGris.png';
+import etoileRed from "../../images/icones/etoileRed.png";
+import etoileGris from "../../images/icones/etoileGris.png";
 
 export default function FicheLogement(props) {
   const { id } = useParams();
@@ -19,34 +19,34 @@ export default function FicheLogement(props) {
   }
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-    prevIndex > 0 ? prevIndex - 1 : logement.pictures.length - 1
+      prevIndex > 0 ? prevIndex - 1 : logement.pictures.length - 1
     );
   };
-  
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % logement.pictures.length);
   };
-  
+
   return (
     <div>
       <Header />
       <div className="main">
-        <div className="carousel">
+        <div className="carousel-container">
           {logement.pictures.length > 1 && (
-            <button onClick={handlePrevious}>
+            <span className="arrow left" onClick={handlePrevious}>
               <img src={flecheG} alt="Flèche gauche" />
-            </button>
+            </span>
           )}
 
-          <img src={logement.pictures[currentIndex]} alt="image" />
+          <img src={logement.pictures[currentIndex]} alt="image" className="carousel-img" />
 
           {logement.pictures.length > 1 && (
-            <button onClick={handleNext}>
+            <span className="arrow right" onClick={handleNext}>
               <img src={flecheD} alt="Flèche droite" />
-            </button>
+            </span>
           )}
         </div>
 
