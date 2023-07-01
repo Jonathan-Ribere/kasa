@@ -1,5 +1,51 @@
+@import '../../global.scss';
+
 .main{
     padding-left: 0;
    padding-right: 0;
 }
 
+.img {
+    width: 335px;
+    height: 255px;
+    background-color: #f2f2f2; /* Gris léger */
+    border-radius: 10px;
+    margin: auto;
+  }
+  .info{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: $color-red;
+    &-global{
+        &_h1{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25.67px;
+        }
+        &_region{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19.87px;
+        }
+    }
+}
+
+.tag{
+    display: flex;
+    color: #f2f2f2;
+    margin-top: 10px;
+    &-txt{
+        min-width: 65px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        background-color: $color-red;
+        display: inline-block;
+        font-size: 10px;
+        padding: 6px 5px;
+        font-size: 10px;
+        text-align: center;
+        
+    }
+}

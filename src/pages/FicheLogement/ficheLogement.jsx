@@ -24,14 +24,13 @@ export default function FicheLogement(props) {
           <div className="info-global">
             <h1 className="info-global_h1">{logement.title}</h1>
             <p className="info-global_region">{logement.location}</p>
-            <div className="tag">
-              {" "}
+            <span className="tag">
               {logement.tags.map((tag, index) => (
-                <div key={index} className="tag">
+                <div key={index} className="tag-txt">
                   {tag}
                 </div>
               ))}
-            </div>
+            </span>
           </div>
           <div className="user">
             <div className="user-etoile">etoiles</div>
