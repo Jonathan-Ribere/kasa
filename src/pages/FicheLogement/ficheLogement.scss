@@ -1,29 +1,33 @@
 @import '../../global.scss';
 
-.main{
+.main {
     padding-left: 0;
-   padding-right: 0;
+    padding-right: 0;
 }
 
 .img {
     width: 335px;
     height: 255px;
-    background-color: #f2f2f2; /* Gris léger */
+    background-color: #f2f2f2;
+    /* Gris léger */
     border-radius: 10px;
     margin: auto;
-  }
-  .info{
+}
+
+.info {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     color: $color-red;
-    &-global{
-        &_h1{
+
+    &-global {
+        &_h1 {
             font-weight: 500;
             font-size: 18px;
             line-height: 25.67px;
         }
-        &_region{
+
+        &_region {
             font-size: 14px;
             font-weight: 500;
             line-height: 19.87px;
@@ -31,11 +35,12 @@
     }
 }
 
-.tag{
+.tag {
     display: flex;
     color: #f2f2f2;
     margin-top: 10px;
-    &-txt{
+
+    &-txt {
         min-width: 65px;
         margin-right: 8px;
         margin-bottom: 8px;
@@ -46,20 +51,22 @@
         padding: 6px 5px;
         font-size: 10px;
         text-align: center;
-        
+
     }
 }
 
-.user{
+.user {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    &-info{
+
+    &-info {
         display: flex;
         align-items: center;
-        &_pic{
+
+        &_pic {
             width: 45px;
             height: 45px;
             margin-left: 10px;
@@ -68,36 +75,36 @@
     }
 
 }
+
 .carousel-container {
     position: relative;
-  }
-  
-  .carousel-container .arrow {
+}
+
+.carousel-container .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-  }
-  
-  .carousel-container .left {
-    left: 10px; /* ajustez la valeur selon vos besoins */
-  }
-  
-  .carousel-container .right {
-    right: 10px; /* ajustez la valeur selon vos besoins */
-  }
-  
-  .carousel-container .arrow img {
-    /* styles personnalisés pour les images de flèche */
+}
+
+.carousel-container .left {
+    left: 10px;
+}
+
+.carousel-container .right {
+    right: 10px;
+}
+
+.carousel-container .arrow img {
     margin-left: 10px;
     margin-right: 10px;
 
-  }
-  
-  .carousel-img{
+}
+
+.carousel-img {
     width: 355px;
     height: 250px;
     object-fit: cover;
     margin-left: 20px;
     margin-right: 20px;
-  }
+}

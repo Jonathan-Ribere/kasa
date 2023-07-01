@@ -9,6 +9,7 @@ import flecheG from "../../images/icones/flecheGauche.png";
 
 import etoileRed from "../../images/icones/etoileRed.png";
 import etoileGris from "../../images/icones/etoileGris.png";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function FicheLogement(props) {
   const { id } = useParams();
@@ -81,6 +82,10 @@ export default function FicheLogement(props) {
               />
             </div>
           </div>
+        </div>
+        <div>
+        <Dropdown titre="Description" text={logement.description}/>
+        <Dropdown titre="Équipements" />
         </div>
       </div>
     </div>
