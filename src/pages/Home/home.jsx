@@ -3,7 +3,7 @@ import Header from "../../components/Header/header";
 import cover from "../../images/BgHome.png";
 import CardHome from "../../components/Card/CardHome";
 import data from "../../db";
-import './home.scss'
+import "./home.scss";
 
 export default function index() {
   return (
@@ -14,11 +14,16 @@ export default function index() {
         <section className="section-home">
           <div className="section-home_img">
             <img src={cover} className="coverHome" alt="Image de site" />
-            <span className="image-text">Chez vous, <br />partout et ailleurs </span>
+            <span className="image-text">
+              Chez vous, <br />
+              partout et ailleurs{" "}
+            </span>
           </div>
-          {data.map((item) => (
-            <CardHome key={item.id} id={item.id} title={item.title} />
-          ))}
+          <div className="card-container">
+            {data.map((item) => (
+              <CardHome key={item.id} id={item.id} title={item.title} />
+            ))}
+          </div>
         </section>
       </main>
     </div>

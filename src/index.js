@@ -1,12 +1,12 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './global.scss';
-import Home from './pages/Home/home';
-import Apropos from './pages/Apropos/apropos';
-import FicheLogement from './pages/FicheLogement/FicheLogement';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./global.scss";
+import Home from "./pages/Home/home";
+import Apropos from "./pages/Apropos/apropos";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
 
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>

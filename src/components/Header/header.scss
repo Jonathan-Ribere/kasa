@@ -1,24 +1,23 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-  
-    &-lien {
-      font-size: 14px;
-      font-weight: 500;
-  
-      a {
-        text-decoration: none;
-        color: $color-red
-      }
-  
-      .header-lien_text {
-        text-decoration: underline;
-        margin-right: 5px;
-      }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+
+  &-lien {
+    font-size: 14px;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+      color: $color-red;
+    }
+
+    .header-lien_text {
+      text-decoration: underline;
+      margin-right: 5px;
     }
   }
-  
+}

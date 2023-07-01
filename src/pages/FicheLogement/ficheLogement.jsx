@@ -42,7 +42,11 @@ export default function FicheLogement(props) {
             </span>
           )}
 
-          <img src={logement.pictures[currentIndex]} alt="image" className="carousel-img" />
+          <img
+            src={logement.pictures[currentIndex]}
+            alt="image"
+            className="carousel-img"
+          />
 
           {logement.pictures.length > 1 && (
             <span className="arrow right" onClick={handleNext}>
@@ -84,8 +88,12 @@ export default function FicheLogement(props) {
           </div>
         </div>
         <div>
-        <Dropdown titre="Description" text={logement.description}/>
-        <Dropdown titre="Équipements" />
+          <Dropdown titre="Description" content={logement.description} />
+          <Dropdown
+            titre="Équipements"
+            content={logement.equipments}
+            isList={true}
+          />
         </div>
       </div>
     </div>

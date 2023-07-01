@@ -17,7 +17,11 @@ export default function Dropdown(props) {
       </div>
       {isOpen && (
         <ul className="dropdown-menu">
-          <p>{props.text}</p>
+          {props.isList ? (
+            props.content.map((item, index) => <li key={index}>{item}</li>)
+          ) : (
+            <p>{props.content}</p>
+          )}
         </ul>
       )}
     </div>
