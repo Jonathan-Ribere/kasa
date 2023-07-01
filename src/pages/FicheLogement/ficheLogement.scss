@@ -49,3 +49,22 @@
         
     }
 }
+
+.user{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    &-info{
+        display: flex;
+        align-items: center;
+        &_pic{
+            width: 45px;
+            height: 45px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+    }
+
+}
