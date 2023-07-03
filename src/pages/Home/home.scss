@@ -1,8 +1,15 @@
+@import "../../global.scss";
+
 .section-home {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1440px) {
+    // padding: 0 100px;
+  }
+
   &_img {
     height: 111px;
     width: 335px;
@@ -10,40 +17,69 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-  }
-  @media screen and (min-width: 700px) {
-    &_img {
-      width: 80%;
+
+    @media screen and (min-width: 1440px) {
+      width: 100%;
     }
   }
+
 }
+
 .coverHome {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   position: relative;
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
+
 .image-text {
   position: absolute;
   left: 55px;
   font-weight: 600;
   color: white;
+  @media screen and (min-width: 1440px) {
+ left: initial;
+  }
 }
 
-.card-container {
+br {
+  @media screen and (min-width: 1440px) {
+    display: none;
+    left: 0;
+  }
+}
+
+
+.card-container{
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: $color-gris;
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.card-container_card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media screen and (min-width: 1440px) {
+  justify-content: space-between;
+  }
 }
 
-.card-container .card-home {
-  width: calc(33.33% - 10px); 
+.card-container_card .card-home {
+  width: calc(33.33% - 10px);
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 700px) {
   .card-container .card-home {
-    width: 100%; 
+    width: 100%;
   }
 }
