@@ -6,16 +6,21 @@
   padding: 20px;
   align-items: center;
   @media screen and (min-width: 1440px) {
-
+padding: 20px 0 60px 0;
     margin-left: 100px;
     margin-right: 100px;
     
   }
 
   &-lien {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-
+    line-height: 17.11px;
+    display: flex;
+    @media screen and (min-width: 1440px) {
+     font-size: 24px;
+     line-height: 34.22px;
+    }
     a {
       text-decoration: none;
       color: $color-red;
@@ -26,4 +31,8 @@
       margin-right: 5px;
     }
   }
+}
+
+.lien1{
+  margin-right: 10px;
 }

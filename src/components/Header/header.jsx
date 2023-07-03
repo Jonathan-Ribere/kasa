@@ -16,12 +16,19 @@ export default function Header() {
       </div>
 
       <nav className="header-lien color_red">
+        <div className="divLien lien1">
         <Link to="/" className="header-lien_text">
           ACCUEIL
         </Link>
+
+        </div>
+
+        <div className="divLien lien2">
+
         <Link to="/apropos" className="">
           A PROPOS
         </Link>
+        </div>
       </nav>
     </div>
   );

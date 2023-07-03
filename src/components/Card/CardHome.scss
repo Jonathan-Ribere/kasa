@@ -12,7 +12,7 @@
     border-radius: 10px;
     background-color: $color-red;
     margin-bottom: 20px;
-
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.745),  $color-red 30%);
     &-titre {
         margin-left: 20px;
         height: 100%;
@@ -20,7 +20,7 @@
 
         &_text {
             position: absolute;
-            bottom: 40px;
+            bottom: 18px;
             font-size: 18px;
             font-weight: 500;
             line-height: 25.67px;
