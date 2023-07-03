@@ -74,6 +74,7 @@ export default function FicheLogement(props) {
                   key={index}
                   src={index < logement.rating ? etoileRed : etoileGris}
                   alt="étoile"
+                  className="etoile"
                 />
               ))}
             </div>
@@ -87,7 +88,7 @@ export default function FicheLogement(props) {
             </div>
           </div>
         </div>
-        <div>
+        <div className="dropdownContainer">
           <Dropdown titre="Description" content={logement.description} />
           <Dropdown
             titre="Équipements"

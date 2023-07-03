@@ -3,6 +3,11 @@
 .main {
     padding-left: 0;
     padding-right: 0;
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 
 .img {
@@ -20,17 +25,39 @@
     margin-top: 10px;
     color: $color-red;
 
+    @media screen and (min-width: 1440px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      margin-left: 0;
+      margin-right: 0;
+      }
+
     &-global {
+        @media screen and (min-width: 1440px) {
+        width: 85%;
+          }
         &_h1 {
             font-weight: 500;
             font-size: 18px;
             line-height: 25.67px;
+
+            @media screen and (min-width: 1440px) {
+                font-size: 36px;
+                line-height: 51.34px;
+            }
         }
 
         &_region {
             font-size: 14px;
             font-weight: 500;
             line-height: 19.87px;
+
+            @media screen and (min-width: 1440px) {
+                font-size: 18px;
+                line-height: 25.67px;
+            }
         }
     }
 }
@@ -63,9 +90,26 @@
     margin-top: 10px;
     margin-bottom: 20px;
 
+    @media screen and (min-width: 1440px) {
+     width: 25%;
+     flex-direction: column-reverse;
+     align-items: end;
+     
+          }
     &-info {
         display: flex;
         align-items: center;
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 18px;
+             
+                  }
+        &_name{
+            font-size: 12px;
+            @media screen and (min-width: 1440px) {
+               font-size: 18px;
+                
+                     }
+        }
 
         &_pic {
             width: 45px;
@@ -75,6 +119,12 @@
         }
     }
 
+}
+
+.dropdownContainer{
+    @media screen and (min-width: 1440px) {
+       display: flex;
+      }
 }
 
 .carousel-container {
@@ -99,6 +149,9 @@
 .carousel-container .arrow img {
     margin-left: 10px;
     margin-right: 10px;
+    @media screen and (min-width: 1440px){
+        width: 60px;
+    }
 
 }
 
@@ -108,8 +161,24 @@
     object-fit: cover;
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 1440px) {
+        width: 100%;
+        height: 415px;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 25px;
+
+    }
 }
 
 li {
     list-style: none;
+}
+
+.etoile{
+    @media screen and (min-width: 1440px){
+        width: 30px;
+    }
 }
