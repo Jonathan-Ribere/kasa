@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from "../../components/Header/header";
 import "./ficheLogement.scss";
 import data from "../../db";
+import Error from "../Error/Error";
 
 import flecheD from "../../images/icones/flecheDroite.png";
 import flecheG from "../../images/icones/flecheGauche.png";
@@ -27,7 +28,11 @@ export default function FicheLogement(props) {
   const logement = data.find((item) => item.id === id);
 
   if (!logement) {
-    return <div>Ce logement n'existe pas.</div>;
+    return (
+      <div>
+        <Error />
+      </div>
+    );
   }
 
   {
@@ -113,12 +118,16 @@ export default function FicheLogement(props) {
           </div>
         </div>
         <div className="dropdownContainer">
-          <Dropdown titre="Description" content={logement.description}   dropdownClass="dropdown" />
+          <Dropdown
+            titre="Description"
+            content={logement.description}
+            dropdownClass="dropdown"
+          />
           <Dropdown
             titre="Équipements"
             content={logement.equipments}
             isList={true}
-            dropdownClass="dropdown" 
+            dropdownClass="dropdown"
           />
         </div>
       </div>
