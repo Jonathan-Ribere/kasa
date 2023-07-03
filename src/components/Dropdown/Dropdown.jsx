@@ -15,7 +15,7 @@ export default function Dropdown(props) {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="dropdown">
+    <div className={`dropdown ${props.dropdownClass}`}>
       <div className="dropdown-toggle" onClick={toggleDropdown}>
         <h2>{props.titre}</h2>
 

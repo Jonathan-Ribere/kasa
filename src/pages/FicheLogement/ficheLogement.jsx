@@ -12,21 +12,45 @@ import etoileGris from "../../images/icones/etoileGris.png";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function FicheLogement(props) {
+  {
+    /** hook useParams() de React Router pour extraire la valeur de l'URL dynamique
+ nommée "id". Cette valeur sera stockée dans la variable id. */
+  }
   const { id } = useParams();
+
+  {
+    /** Cette méthode find() utilise le tableau data pour rechercher l'élément du logement
+   correspondant à l'ID extrait de l'URL. L'ID du logement est comparé avec chaque élément
+   du tableau jusqu'à ce qu'une correspondance soit trouvée. L'élément correspondant est
+   stocké dans la variable logement.  */
+  }
   const logement = data.find((item) => item.id === id);
 
   if (!logement) {
     return <div>Ce logement n'existe pas.</div>;
   }
 
+  {
+    /** le hook useState() pour créer une variable d'état currentIndex, et une fonction setCurrentIndex
+ pour la mettre à jour. La valeur initiale de currentIndex est définie sur 0. */
+  }
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
+    {
+      /** la fonction setCurrentIndex pour mettre à jour currentIndex en utilisant une fonction de rappel.
+   La valeur de currentIndex est vérifiée : si elle est supérieure à zéro, elle est décrémentée de 1
+   pour passer à l'image précédente. Sinon, elle est définie sur logement.pictures.length - 1
+   pour boucler vers la dernière image de la liste. */
+    }
     setCurrentIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : logement.pictures.length - 1
     );
   };
 
+  {
+    /**handleNext met à jour l'index actuel pour afficher l'image suivante dans une liste d'images */
+  }
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % logement.pictures.length);
   };
@@ -89,11 +113,12 @@ export default function FicheLogement(props) {
           </div>
         </div>
         <div className="dropdownContainer">
-          <Dropdown titre="Description" content={logement.description} />
+          <Dropdown titre="Description" content={logement.description}   dropdownClass="dropdown" />
           <Dropdown
             titre="Équipements"
             content={logement.equipments}
             isList={true}
+            dropdownClass="dropdown" 
           />
         </div>
       </div>

@@ -19,13 +19,13 @@ export default function index() {
               partout et ailleurs{" "}
             </span>
           </div>
-          <div className="card-container">
+          <main className="card-container">
             <div className="card-container_card">
               {data.map((item) => (
                 <CardHome key={item.id} id={item.id} title={item.title} />
               ))}
             </div>
-          </div>
+          </main>
         </section>
       </main>
     </div>
