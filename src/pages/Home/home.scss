@@ -29,8 +29,8 @@
   border-radius: 10px;
   position: relative;
 
-    filter: brightness(50%); 
-  
+  filter: brightness(50%);
+
 
   @media screen and (min-width: 1440px) {
     margin-left: 100px;
@@ -43,10 +43,11 @@
   left: 55px;
   font-weight: 600;
   color: white;
+
   @media screen and (min-width: 1440px) {
- left: initial;
- font-size: 48px;
- font-weight: 500;
+    left: initial;
+    font-size: 48px;
+    font-weight: 500;
   }
 }
 
@@ -58,10 +59,11 @@ br {
 }
 
 
-.card-container{
+.card-container {
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 25px;
+
   @media screen and (min-width: 1440px) {
     padding: 50px;
     background-color: $color-gris;
@@ -72,8 +74,9 @@ br {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @media screen and (min-width: 1440px) {
-  justify-content: space-between;
+    justify-content: space-between;
   }
 }
 

@@ -14,7 +14,6 @@
     width: 335px;
     height: 255px;
     background-color: #f2f2f2;
-    /* Gris léger */
     border-radius: 10px;
     margin: auto;
 }
@@ -26,18 +25,19 @@
     color: $color-red;
 
     @media screen and (min-width: 1440px) {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      margin-bottom: 25px;
-      margin-left: 0;
-      margin-right: 0;
-      }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     &-global {
         @media screen and (min-width: 1440px) {
-        width: 85%;
-          }
+            width: 85%;
+        }
+
         &_h1 {
             font-weight: 500;
             font-size: 18px;
@@ -91,24 +91,28 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 1440px) {
-     width: 25%;
-     flex-direction: column-reverse;
-     align-items: end;
-     
-          }
+        width: 25%;
+        flex-direction: column-reverse;
+        align-items: end;
+
+    }
+
     &-info {
         display: flex;
         align-items: center;
+
         @media screen and (min-width: 1440px) {
             margin-bottom: 18px;
-             
-                  }
-        &_name{
+
+        }
+
+        &_name {
             font-size: 12px;
+
             @media screen and (min-width: 1440px) {
-               font-size: 18px;
-                
-                     }
+                font-size: 18px;
+
+            }
         }
 
         &_pic {
@@ -121,10 +125,10 @@
 
 }
 
-.dropdownContainer{
+.dropdownContainer {
     @media screen and (min-width: 1440px) {
-       display: flex;
-      }
+        display: flex;
+    }
 }
 
 .carousel-container {
@@ -149,7 +153,8 @@
 .carousel-container .arrow img {
     margin-left: 10px;
     margin-right: 10px;
-    @media screen and (min-width: 1440px){
+
+    @media screen and (min-width: 1440px) {
         width: 60px;
     }
 
@@ -177,8 +182,8 @@ li {
     list-style: none;
 }
 
-.etoile{
-    @media screen and (min-width: 1440px){
+.etoile {
+    @media screen and (min-width: 1440px) {
         width: 30px;
     }
 }
