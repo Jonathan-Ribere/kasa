@@ -29,9 +29,7 @@ export default function Dropdown(props) {
           {/** Si props.isList est true, le contenu est considéré comme une liste */}
           {props.isList
             ? props.content.map((item, index) => <li key={index}>{item}</li>)
-            : {
-                /** Sinon, le contenu est affiché dans une balise <p> */
-              }(<p>{props.content}</p>)}
+            :(<p>{props.content}</p>)}
         </ul>
       )}
     </div>
