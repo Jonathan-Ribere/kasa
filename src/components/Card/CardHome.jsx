@@ -12,7 +12,7 @@ export default function CardHome(props) {
   const cover = logement ? logement.cover : "";
 
   return (
-    <Link to={`/fiche-logement/${id}`}>
+    <Link to={`/fiche-logement/${id}`} className="linkCardHome">
       <div className="card">
         <div className="card-titre">
           <img src={cover} alt="Cover" className="card-cover" />

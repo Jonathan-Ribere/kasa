@@ -1,38 +1,49 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .cover-home {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
 }
 
 .card {
-    width: 335px;
-    height: 255px;
+  width: 335px;
+  height: 255px;
+  border-radius: 10px;
+  background-color: $color-red;
+  margin-bottom: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.745), $color-red 30%);
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
+
+  &-titre {
+    height: 100%;
+    position: relative;
+
+    &_text {
+      position: absolute;
+      bottom: 18px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      color: #fff;
+      padding: 0 10px;
+    }
+  }
+
+  &-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    background-color: $color-red;
-    margin-bottom: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.745), $color-red 30%);
+  }
+}
 
-    &-titre {
-        margin-left: 20px;
-        height: 100%;
-        position: relative;
-
-        &_text {
-            position: absolute;
-            bottom: 18px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 25.67px;
-            color: #fff;
-            padding: 0 10px;
-        }
-    }
-    &-cover {
-        width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    }
+.linkCardHome {
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+  }
 }

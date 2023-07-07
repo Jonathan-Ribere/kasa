@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/Footer";
 import cover from "../../images/BgHome.png";
 import CardHome from "../../components/Card/CardHome";
 import data from "../../db";
@@ -28,6 +29,7 @@ export default function index() {
           </main>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
