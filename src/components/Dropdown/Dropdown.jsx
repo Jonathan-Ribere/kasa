@@ -28,8 +28,8 @@ export default function Dropdown(props) {
         <ul className="dropdown-menu">
           {/** Si props.isList est true, le contenu est considéré comme une liste */}
           {props.isList
-            ? props.content.map((item, index) => <li key={index}>{item}</li>)
-            :(<p>{props.content}</p>)}
+            ? props.content.map((item, index) => <li key={index} className="listDropdown">{item}</li>)
+            :(<p className="dropdown-menu_txt">{props.content}</p>)}
         </ul>
       )}
     </div>

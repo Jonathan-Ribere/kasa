@@ -43,6 +43,12 @@ section {
       margin-left: 0;
       margin-right: 0;
     }
+
+    &_txt{
+      @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      }
+    }
   }
 }
 
@@ -97,4 +103,10 @@ h2 {
 
 .arrow {
   margin-right: 5px;
+}
+
+
+.listDropdown{
+
+  font-size: 18px;
 }

@@ -26,6 +26,13 @@
             font-weight: 500;
             line-height: 25.67px;
             color: #fff;
+            padding: 0 10px;
         }
+    }
+    &-cover {
+        width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     }
 }
