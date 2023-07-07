@@ -9,11 +9,11 @@ export default function Aporpos() {
   return (
     <>
       <Header />
-      <main>
+      <main className="mainApropos">
         <div className="cover">
           <img src={cover} className="cover-img" alt="Image de site" />
         </div>
-        <section>
+        <section className="sectionApropos">
           <Dropdown
             titre="Fiabilité"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

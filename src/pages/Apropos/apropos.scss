@@ -1,5 +1,16 @@
-
-
+.mainApropos{
+    @media screen and (min-width: 1024px) {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+}
+.sectionApropos{
+    @media screen and (min-width: 1024px) {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+}
 .cover {
     width: 335px;
     height: 220px;
