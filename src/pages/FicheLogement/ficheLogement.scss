@@ -183,6 +183,22 @@ li {
     list-style: none;
 }
 
+.image-counter {
+    position: absolute;
+    bottom: 10px; // Ajustez cette valeur pour le positionnement vertical
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+
 .etoile {
     @media screen and (min-width: 1440px) {
         width: 30px;

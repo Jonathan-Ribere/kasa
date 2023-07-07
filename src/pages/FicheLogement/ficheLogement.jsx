@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom"
 import Header from "../../components/Header/header";
 import "./ficheLogement.scss";
 import data from "../../db";
+
 import Error from "../Error/Error";
 
 import flecheD from "../../images/icones/flecheDroite.png";
@@ -12,7 +13,7 @@ import etoileRed from "../../images/icones/etoileRed.png";
 import etoileGris from "../../images/icones/etoileGris.png";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
-export default function FicheLogement(props) {
+export default function FicheLogement() {
   {
     /** hook useParams() de React Router pour extraire la valeur de l'URL dynamique
  nommée "id". Cette valeur sera stockée dans la variable id. */
@@ -28,11 +29,9 @@ export default function FicheLogement(props) {
   const logement = data.find((item) => item.id === id);
 
   if (!logement) {
-    return (
-      <div>
-        <Error />
-      </div>
-    );
+      return (
+        <Navigate to="/error" replace={true} />
+      )
   }
 
   {
@@ -64,25 +63,33 @@ export default function FicheLogement(props) {
     <div>
       <Header />
       <div className="main">
-        <div className="carousel-container">
-          {logement.pictures.length > 1 && (
-            <span className="arrow left" onClick={handlePrevious}>
-              <img src={flecheG} alt="Flèche gauche" />
-            </span>
-          )}
+      <div className="carousel-container">
+  {logement.pictures.length > 1 && (
+    <span className="arrow left" onClick={handlePrevious}>
+      <img src={flecheG} alt="Flèche gauche" />
+    </span>
+  )}
 
-          <img
-            src={logement.pictures[currentIndex]}
-            alt="image"
-            className="carousel-img"
-          />
+  <img
+    src={logement.pictures[currentIndex]}
+    alt="image"
+    className="carousel-img"
+  />
 
-          {logement.pictures.length > 1 && (
-            <span className="arrow right" onClick={handleNext}>
-              <img src={flecheD} alt="Flèche droite" />
-            </span>
-          )}
-        </div>
+  {logement.pictures.length > 1 && (
+    <span className="arrow right" onClick={handleNext}>
+      <img src={flecheD} alt="Flèche droite" />
+    </span>
+  )}
+
+  {logement.pictures.length > 1 && (
+    <span className="image-counter">
+      {currentIndex + 1}/{logement.pictures.length}
+    </span>
+  )}
+</div>
+
+
 
         <div className="info">
           <div className="info-global">
