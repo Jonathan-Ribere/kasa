@@ -28,12 +28,12 @@
       color: $color-red;
     }
 
-    .header-lien_text {
-      text-decoration: underline;
-      margin-right: 5px;
-      @media screen and (min-width: 1024px) {
-      text-decoration: none;
+    .active {
+      border-bottom: 1px solid $color-red;
     }
+
+    .header-lien_text {
+      margin-right: 5px;
     }
   }
 }
