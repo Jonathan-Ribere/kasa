@@ -13,7 +13,7 @@
   border-radius: 10px;
   background-color: $color-red;
   margin-bottom: 20px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.745), $color-red 30%);
+  background: linear-gradient(to top, black, transparent);
 
   @media screen and (min-width: 1024px) {
     width: 100%;
@@ -22,7 +22,6 @@
   &-titre {
     height: 100%;
     position: relative;
-
     &_text {
       position: absolute;
       bottom: 18px;
@@ -40,6 +39,17 @@
     height: 100%;
     border-radius: 10px;
   }
+}
+
+.card-titre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, transparent);
+  opacity: 0.5; 
 }
 
 .linkCardHome {

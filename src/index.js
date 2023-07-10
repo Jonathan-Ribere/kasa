@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./global.scss";
 import Home from "./pages/Home/home";
 import Apropos from "./pages/Apropos/apropos";
-import FicheLogement from "./pages/FicheLogement/FicheLogement";
+import FicheLogement from "./pages/FicheLogement/ficheLogement";
 import Error from "./pages/Error/Error"
 
 const root = createRoot(document.getElementById("root"));

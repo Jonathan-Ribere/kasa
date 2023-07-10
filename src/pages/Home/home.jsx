@@ -6,7 +6,7 @@ import CardHome from "../../components/Card/CardHome";
 import data from "../../db";
 import "./home.scss";
 
-export default function index() {
+export default function Home() {
   return (
     <div>
       <Header />
@@ -14,7 +14,7 @@ export default function index() {
         <div className="cover-home"></div>
         <section className="section-home">
           <div className="section-home_img">
-            <img src={cover} className="coverHome" alt="Image de site" />
+            <img src={cover} className="coverHome" alt="Images de site" />
             <span className="image-text">
               Chez vous, <br />
               partout et ailleurs{" "}

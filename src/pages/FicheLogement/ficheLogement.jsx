@@ -4,7 +4,6 @@ import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/Footer";
 import "./ficheLogement.scss";
 import data from "../../db";
-import Error from "../Error/Error";
 import flecheD from "../../images/icones/flecheDroite.png";
 import flecheG from "../../images/icones/flecheGauche.png";
 import flecheD1 from "../../images/icones/gaucheGrandFormat.png";
@@ -13,7 +12,7 @@ import etoileRed from "../../images/icones/etoileRed.png";
 import etoileGris from "../../images/icones/etoileGris.png";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
-export default function FicheLogement() {
+export default function ficheLogement() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
 
@@ -60,7 +59,7 @@ export default function FicheLogement() {
 
           <img
             src={logement.pictures[currentIndex]}
-            alt="image"
+            alt="images"
             className="carousel-img"
           />
 
@@ -103,7 +102,7 @@ export default function FicheLogement() {
               <div className="user-info_name">{logement.host.name}</div>
               <img
                 src={logement.host.picture}
-                alt="Profile Picture"
+                alt="Profile Pictures"
                 className="user-info_pic"
               />
             </div>
